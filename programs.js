@@ -22,7 +22,7 @@ const programStubs =
 ]],
 ['🛠️',,,,shortcut,'Apps',,
 [
-    ['🌐','apps/webBrowser.html',1000,625,defaultFlags|shortcut,,'Jordan Bourbonnais.\njordanbourbonnais.com'],
+    ['🌐','apps/jordanBourbonnais.html',1000,625,defaultFlags|shortcut,,'Jordan Bourbonnais.\njordanbourbonnais.com'],
     ['🌐','apps/crm.html',1000,625,defaultFlags|shortcut,,'CRM - Jordan Bourbonnais.\ncrm.jordanbourbonnais.com'],
     ['🔎','https://dweetview.3d2k.com',,,defaultFlags|shortcut],
     ['⌛','apps/timer.html',400,139,reload|shortcut],
