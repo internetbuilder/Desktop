@@ -14,7 +14,13 @@
     <script src=music/songs/depp.js?9></script>
     <script src=music/songs/packabunchas.js?9></script>
     <script src=music/songs/captaincallisto.js?9></script>
-    
+    <script>
+        // When the user clicks on <div>, open the popup
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+        </script>
 </head>
 <body>
 <div id=background></div>
@@ -190,5 +196,31 @@ const OS13kVersion = 81;
 <script src=programs.js?338></script>
 <script src=js\OS13k.js?338></script>
 <script src=js\OS13kInput.js?338></script>
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      Chatroom
+    </div>
+  
+  </div>
+  
+  
+  <br>
+  <div class="chat-popup" id="myForm">
+    <form action="/index.html" class="form-container">
+      <h1>Chat</h1>
+  
+      <label for="msg"><b>Message</b></label>
+      <textarea placeholder="Type message.." name="msg" required></textarea>
+  
+      <button type="submit" class="btn">Send</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
 </body>
 </html>
