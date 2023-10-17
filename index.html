@@ -27,7 +27,100 @@
 <div id=programsMenu style='position:absolute'></div>
 <div id=menu></div>
 <div id=desktopIcons style='position:absolute;top:60;display:flex;flex-wrap:wrap'>
-<iframe id=windowTemplate style='display:none'></iframe>
+<iframe id=windowTemplate style='display:none'>
+<style>
+:host
+{
+    position:absolute;
+    background:#000;
+    box-shadow:5px 5px 9px;
+    border:3px solid#222;
+    border-radius:6px;
+    overflow:hidden;
+}
+.desktopIcon 
+{ 
+    width:99;
+    height:99;
+    padding:9;
+    font-size:15;
+    color:#fff;
+    text-shadow:1px 1px 2px#000; 
+    overflow:hidden;
+    text-align:center;
+    white-space:normal;
+}
+.desktopIcon:hover         { background:linear-gradient(#ff8,#fff); }
+.desktopIconIcon           { color:#000; font-size:36; margin:4; pointer-events:none; }
+input, button, span { margin:4; }
+textarea            { padding:9; }
+span                { white-space:nowrap; }
+.titlebar
+{
+    height:34;
+    font-size:24;
+    display:flex;
+    align-items:center;
+    white-space:nowrap;
+    background:linear-gradient(#ccc,#444);
+    border-bottom:3px solid;
+}
+.titlebarActive       { background:linear-gradient(#eee,#88f); }
+.titlebarActiveUser   { background:linear-gradient(#eee,#8f8); }
+.titlebarActiveSticky { background:linear-gradient(#eee,#f88); }
+.titlebarSticky       { background:linear-gradient(#ccc,#844); }
+.folder
+{
+    background:linear-gradient(#888,#333);
+    display:flex;
+    flex-wrap:wrap;
+    align-content:flex-start;
+    overflow-y:auto;
+}
+#name                 { width:100%; overflow:hidden; cursor:grab; }
+#icon           
+{ 
+    display:inline;
+    text-shadow:1px 1px 3px#000;
+    margin-left:9;
+    margin-right:9;
+    pointer-events:none;
+}
+#frame
+{
+    width:100%;
+    height:100%;
+    background:#fff;
+    border:none;
+    visibility:hidden;
+}
+#codeText
+{
+    height:199;
+    background:#000;
+    color:#fff;
+}
+#errorText
+{
+    background:#000;
+    color:#f00;
+}
+#codeOptions
+{
+    background:#111;
+    color:#fff;
+    font-size:16;
+    overflow:auto;
+}
+#codeText, #errorText, #codeOptions
+{
+    width:100%;
+    resize:none;
+    outline:0;
+    border-top:2px solid;
+}
+</style>
+</iframe>
 <script>
 
 ///////////////////////////////////////////////////////////////////////////////
