@@ -24,6 +24,7 @@ const programStubs =
 [
     ['🌐','apps/jordanBourbonnais.html',1000,625,defaultFlags|shortcut,,'Jordan Bourbonnais.\njordanbourbonnais.com'],
     ['🌐','apps/crm.html',1000,625,defaultFlags|shortcut,,'CRM - Jordan Bourbonnais.\ncrm.jordanbourbonnais.com'],
+    ['🌐','apps/layers.html',1000,625,defaultFlags|shortcut,,'Layers.\nonlyhack.pages.dev'],
     ['🔎','https://dweetview.3d2k.com',,,defaultFlags|shortcut],
     ['⌛','apps/timer.html',400,139,reload|shortcut],
     ['👾','apps/spriteGenerator.html'],
