@@ -7,6 +7,7 @@ const programStubs =
 [
 ['❌',,,,closeAll,'Close All'],
 ['<b><span style=color:#0f0>?','help.html',300,350,resize|shortcut,,'Check here to see help, code, or edit user programs.\n\nHave fun! ✌️😄'],
+['<b><span style=color:#0f0>?','guru.html',300,350,resize|shortcut,,'Check here to see help, code, or edit user programs.\n\nHave fun! ✌️😄'],
 ['⚙️',,,,shortcut,'System',,
 [
  //   ['🏆','system/trophyCase.html',,,full|resize|sticky,,'View all your trophies here.\nAny JS13k game can add trophies, play to win more!'],
